@@ -1,3 +1,4 @@
-# Lince-Tech-Academy
+# Lince TechAcademy
+Destinado a exercícios e projetos para o programa.
 
-https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/.idea/LINCE%20TECH%20ACADEMY.png
+  <img height="300em" src="https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/.idea/LINCE%20TECH%20ACADEMY.png"/>
