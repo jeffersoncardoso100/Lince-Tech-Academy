@@ -1,27 +1,49 @@
-import 'package:intl/intl.dart';
-// pacote importado com sucesso, graças a Daily...
+oid  main (){
 
-// continuando progressão e atualização, ultiliando mesma estrutura da resposta fornecida pelo github tendo como exemplo para futuros projetos
 
-void main() {
-  final dateFormat = DateFormat('dd/MM/yyyy');
-  final dataAtual = DateTime.now();
+  Lista < int > num  = [ 10 , 35 , 999 , 126 , 95 , 7 , 348 , 462 , 43 , 109 ];
+  int i = 10 ,soma = 0 ;
 
-  var diasUteisRestantes = 18;
-  var dataCalculada = dataAtual;
+  print ( "for: ${ forMode ( num , i , soma )} " );
+  print ( "while: ${ whileMode ( num , i , soma )} " );
+  print ( "recursão: ${ recursionMode ( num , i )} " );
+  print ( "lista: ${ listMode ( num , i , soma )} " );
+}
 
-  while (diasUteisRestantes > 0) {
-    dataCalculada = dataCalculada.add(Duration(days: 1));
-    final ehSabado = dataCalculada.weekday == DateTime.friday;
-    final ehDomingo = dataCalculada.weekday == DateTime.sunday;
+int  forMode ( List < int > num , int i, int soma){
 
-    if (ehSabado || ehDomingo) {
-      continue;
-    }
-
-    diasUteisRestantes--;
+  for (i = 0 ;i < num .length;i ++ ){
+    soma +=  num [i];
   }
 
-  print('Data atual: ${dateFormat.format(dataAtual)}');
-  print('Data calculada: ${dateFormat.format(dataCalculada)}');
+  retornar soma;
+}
+
+int  whileMode ( List < int > num , int i, int soma){
+
+  e = 9 ;
+  enquanto (i > - 1 ){
+    soma +=  num [i];
+    eu -- ;
+  }
+
+  retornar soma;
+}
+
+int  recursionMode ( List < int > num , int i){
+
+  if (i == 0 ){
+    retorna  0 ;
+  }
+  senão {
+    return  num [i - 1 ] +  recursionMode ( num , i - 1 );
+  }
+
+}
+
+int  listMode ( List < int > num , int i, int soma){
+
+  soma +=  num . reduzir ((i, j) => i + j);
+
+  retornar soma;
 }
