@@ -3,7 +3,7 @@ import 'dart:math';
 void main() {
   final pessoa = Pessoa();
 
-  final fornecedor = [FornecedorDeSanduiches(), FornecedorDeBebidas()];
+  final fornecedor = [FornecedorDeBebidas(),  FornecedorDeSanduiches(), FornecedorDeBolos(), FornecedorDePetiscos(), FornecedorDeSaladas()];
 
   final random = Random();
 
@@ -42,7 +42,7 @@ class FornecedorDeSanduiches {
 
   Produto fornecer() {
     return _sanduichesDisponiveis[
-        _random.nextInt(_sanduichesDisponiveis.length)];
+    _random.nextInt(_sanduichesDisponiveis.length)];
   }
 }
 
@@ -164,7 +164,7 @@ class Pessoa {
     }
     if (caloriasStatus == Status.deficitCalorias ||
         caloriasStatus == Status.deficitExtremo) {
-      print('A pessoa precisa de mais refeições.');
+      print('A pessoa está precisando de mais refeições.');
     }
   }
 }
