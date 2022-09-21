@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfcaf4a3-c698-49ae-92db-c2d8f2b9d644" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LINCE TECH ACADEMY.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/analysis_options.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/projeto.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/projeto.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bin/test/projeto_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lib/projeto.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lógica de programação/EX-01.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orientação a Objetos/EX-1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Orientação a Objetos/EX-1.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +26,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false"
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/Adm/Desktop/untitled"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -48,6 +35,18 @@
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="EX-1.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Orientação a Objetos/EX-1.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Orientação a Objetos" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Command Line App.EX-1.dart" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,11 +1,9 @@
-// NÃO PODE SER MODIFICADO
-// -------------------------------------------------------------
-import 'dart:core';
+import 'dart:html';
 import 'dart:math' as math;
 
 void main() {
   final meioDeComunicacao = aleatorio();
-meioDeComunicacao.fazerLigacao('(47) 99876-5432.');
+  meioDeComunicacao.fazerLigacao('(47) 99876-5432');
 }
 
 MeioDeComunicacao aleatorio() {
@@ -23,12 +21,9 @@ MeioDeComunicacao aleatorio() {
 }
 // Criei uma nova classe
 class MeioDeComunicacao {
-// dentro do metodo
-  fazerLigacao(meioDeComunicacao) {
-    print("$Telefone ligando para $meioDeComunicacao");
 
-
-    // NÃO ESTOU CONSEGUINDO IMPLEMENTAR O METODO RAMDOM.
+  fazerLigacao (meioDeComunicacao) {
+   print(" ligando para $meioDeComunicacao");
 
   }
 }
