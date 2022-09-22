@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:math' as math;
 
 void main() {
@@ -19,17 +18,36 @@ MeioDeComunicacao aleatorio() {
     meiosDeComunicacao.length,
   )];
 }
+
 // Criei uma nova classe
 class MeioDeComunicacao {
-
-  fazerLigacao (meioDeComunicacao) {
-   print(" ligando para $meioDeComunicacao");
+  void fazerLigacao(String numero) {
 
   }
 }
-class Orelhao extends MeioDeComunicacao {
+
+class Telefone extends MeioDeComunicacao {
+  @override
+  void fazerLigacao(String numero) {
+    print("[TELEFONE] ligando para $numero");
+  }
 }
-class Celular extends MeioDeComunicacao {}
-class Telefone extends MeioDeComunicacao {}
+
+class Celular extends MeioDeComunicacao {
+  @override
+  void fazerLigacao(String numero) {
+    print("[CELULAR] ligando para $numero");
+  }
+}
+
+class Orelhao extends MeioDeComunicacao {
+  @override
+  void fazerLigacao(String numero) {
+    print("[ORELHAO] ligando para $numero");
+  }
+
+}
+
+
 
 
