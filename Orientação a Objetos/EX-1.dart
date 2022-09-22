@@ -4,7 +4,6 @@ void main() {
   final meioDeComunicacao = aleatorio();
   meioDeComunicacao.fazerLigacao('(47) 99876-5432');
 }
-
 MeioDeComunicacao aleatorio() {
   final meiosDeComunicacao = <MeioDeComunicacao>[
     Telefone(),
@@ -18,11 +17,9 @@ MeioDeComunicacao aleatorio() {
     meiosDeComunicacao.length,
   )];
 }
-
 // Criei uma nova classe
 class MeioDeComunicacao {
   void fazerLigacao(String numero) {
-
   }
 }
 
@@ -45,7 +42,6 @@ class Orelhao extends MeioDeComunicacao {
   void fazerLigacao(String numero) {
     print("[ORELHAO] ligando para $numero");
   }
-
 }
 
 
