@@ -4,8 +4,7 @@ void main() {
   {
     final random = Random();
     final pessoa = Pessoa();
-    final fornecedores = [
-      Fornecedor(<Produto>[
+    list fornecedores = [Fornecedor(<Produto>[
         Produto('Agua', 0),
         Produto('Refrigerante', 200),
         Produto('Suco de fruta', 100),
