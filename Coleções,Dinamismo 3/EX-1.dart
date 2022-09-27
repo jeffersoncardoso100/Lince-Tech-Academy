@@ -10,46 +10,48 @@ void main() {
     Item('Arroz', 2),
     Item('Refrigerante', 1),
   });
-
 }
 
 
 class ListaCompras {
-  int novoLista = 0, progresso = 0;
+  int novoLista = 0,
+      progresso = 0;
 
   Set<Item> itensDesejados = {};
   Set<Item> itensComprados = {};
   Set<Item> semEstoque = {};
 
 
-  void incluir(Set<Item> novoItem) {
+  incluir(Set<Item> novoItem) {
     novoLista += novoItem.length;
     itensDesejados.addAll(novoItem);
   }
 
-  void jaComprado(Set<Item> jacomprado){
-    progresso+= jacomprado.length;
+  jaComprado(Set<Item> jacomprado) {
+    progresso += jacomprado.length;
     itensComprados.addAll(jacomprado);
+    for (final itemComprado in jacomprado) {
+      itensDesejados.removeWhere((element) =>
+      element.nome == itemComprado.nome && element.quantidade == itemComprado.quantidade);
+    }
+
+
+  }
+
+
+
+  void status() {
+
 
 
   }
 }
 
-/// FALTA EU ACESSAR INDICE...
-/// ITEM DA LISTA
-///
-  /*void status(){
-  print('Progresso: $status ');
-
-
-
-}
 class Item {
   Item(this.nome, this.quantidade);
 
   String nome;
   int quantidade;
-  String toString()=> 'Produto: $nome Quantidade: $quantidade';
-}
 
-*/
+  String toString() => 'Produto: $nome Quantidade: $quantidade';
+}
