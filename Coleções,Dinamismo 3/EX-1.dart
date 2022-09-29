@@ -1,57 +1,95 @@
-import 'dart:core';
-import 'dart:math';
-
 void main() {
-  ListaCompras lista = ListaCompras();
-  lista.incluir({
-    Item('Macarrão', 2),
-    Item('Feijão', 1),
-    Item('Carne', 1),
-    Item('Arroz', 2),
-    Item('Refrigerante', 1),
-  });
-}
+  final controleDePessoas = ControleDePessoas();
 
+  // Cadastrando pessoas no sistema
+  controleDePessoas
+    ..cadastrarPessoa(Pessoa('Jose', Mes.abril))
+    ..cadastrarPessoa(Pessoa('Arthur', Mes.agosto))
+    ..cadastrarPessoa(Pessoa('João', Mes.abril))
+    ..cadastrarPessoa(Pessoa('Jesse', Mes.dezembro))
+    ..cadastrarPessoa(Pessoa('Roberta', Mes.fevereiro))
+    ..cadastrarPessoa(Pessoa('Carla', Mes.fevereiro))
+    ..cadastrarPessoa(Pessoa('Thania', Mes.agosto))
+    ..cadastrarPessoa(Pessoa('Rafaela', Mes.marco))
+    ..cadastrarPessoa(Pessoa('Yuri', Mes.junho))
+    ..cadastrarPessoa(Pessoa('Jonas', Mes.setembro))
+    ..cadastrarPessoa(Pessoa('Elias', Mes.outubro))
+    ..cadastrarPessoa(Pessoa('Abel', Mes.maio))
+    ..cadastrarPessoa(Pessoa('Danilo', Mes.abril))
+    ..cadastrarPessoa(Pessoa('Jonathan', Mes.abril))
+    ..cadastrarPessoa(Pessoa('Joseph', Mes.setembro))
+    ..cadastrarPessoa(Pessoa('Abdul', Mes.janeiro))
+    ..cadastrarPessoa(Pessoa('Jean', Mes.abril));
 
-class ListaCompras {
-  int novoLista = 0,
-      progresso = 0;
+  // Passar por todos os meses com pessoas, e imprimir os nomes das pessoas
+  for (final mes in controleDePessoas.mesesComPessoas) {
+    print('\n${mes.name}');
 
-  Set<Item> itensDesejados = {};
-  Set<Item> itensComprados = {};
-  Set<Item> semEstoque = {};
-
-
-  incluir(Set<Item> novoItem) {
-    novoLista += novoItem.length;
-    itensDesejados.addAll(novoItem);
-  }
-
-  jaComprado(Set<Item> jacomprado) {
-    progresso += jacomprado.length;
-    itensComprados.addAll(jacomprado);
-    for (final itemComprado in jacomprado) {
-      itensDesejados.removeWhere((element) =>
-      element.nome == itemComprado.nome && element.quantidade == itemComprado.quantidade);
+    for (final pessoa in controleDePessoas.pessoasPorMes(mes)) {
+      print(' > ${pessoa.nome}');
     }
-
-
-  }
-
-
-
-  void status() {
-
-
-
   }
 }
 
-class Item {
-  Item(this.nome, this.quantidade);
+enum Mes {
+  janeiro,
+  fevereiro,
+  marco,
+  abril,
+  maio,
+  junho,
+  julho,
+  agosto,
+  setembro,
+  outubro,
+  novembro,
+  dezembro,
+}
 
-  String nome;
-  int quantidade;
+class Pessoa {
+  Pessoa(this.nome, this.mesDeNascimento);
 
-  String toString() => 'Produto: $nome Quantidade: $quantidade';
+  final String nome;
+  final Mes mesDeNascimento;
+}
+
+class ControleDePessoas {
+  final _pessoas = <Mes, List<Pessoa>>{};
+
+  /// Cadastra uma pessoa no sistema
+  void cadastrarPessoa(Pessoa pessoa) {
+    final key = pessoa.mesDeNascimento;
+
+    if (_pessoas.containsKey(key)) {
+      _pessoas[key]!.add(pessoa);
+    } else {
+      _pessoas[key] = [pessoa];
+    }
+  }
+
+  /// Retorna a lista de meses com pessoas cadastradas
+  // List<Mes> get mesesComPessoas {
+  //   final meses = <Mes>{};
+  //   for (final pessoa in _pessoas) {
+  //     if (!meses.contains(pessoa.mesDeNascimento)) {
+  //       meses.add(pessoa.mesDeNascimento);
+  //     }
+  //   }
+  //   return meses.toList()..sort((a, b) => a.index.compareTo(b.index));
+  // }
+  List<Mes> get mesesComPessoas =>
+      _pessoas.keys.toList()..sort((a, b) => a.index.compareTo(b.index));
+
+  /// Retorna a lista de pessoas que nasceram no [mes] especificado
+  // List<Pessoa> pessoasPorMes(Mes mes) {
+  //   final pessoas = <Pessoa>[];
+  //   for (final pessoa in _pessoas) {
+  //     if (pessoa.mesDeNascimento == mes) {
+  //       pessoas.add(pessoa);
+  //     }
+  //   }
+  //   return pessoas;
+  // }
+
+  List<Pessoa> pessoasPorMes(Mes mes) => _pessoas[mes] ?? [];
 }
