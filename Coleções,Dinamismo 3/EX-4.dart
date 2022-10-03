@@ -56,4 +56,3 @@ class PacoteDeFiguras {
   Set<String> figurinhasSelecionadas = {};
 
   PacoteDeFiguras(this.figurinhasSelecionadas);
-}
