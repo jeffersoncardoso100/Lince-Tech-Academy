@@ -7,7 +7,7 @@ main(){
   cartas.add("♢ ouros");
 
 
-    for(int i=0;i< cartas.length;){
+  for(int i=0;i< cartas.length;){
     print(cartas);
     cartas.removeLast();
   }
