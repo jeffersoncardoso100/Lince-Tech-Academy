@@ -1,5 +1,6 @@
 # Tarefas v2
 
+
  Versão mais otimizada e atualizada do app contendo novas funcionalidades graficas de acessibilidade .
 
 ## O projeto:
