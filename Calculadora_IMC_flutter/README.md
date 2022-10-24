@@ -1,4 +1,8 @@
-# Lince Tech Academy
+# Calculadora IMC
 
- > Destinado á exercícios e projetos para o programa. 
-  <img src= "https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/.idea/LINCE%20TECH%20ACADEMY.png" width="500" height="600" alt="">
+
+ >App desenvolvido para firmar meus conceitos e praticar bons codigos no framework flutter,
+ >o projeto segue em finalização.
+
+  <img src= "https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/Calculadora_IMC_flutter/tela.jpg" width="220" height="420" alt="">
+
