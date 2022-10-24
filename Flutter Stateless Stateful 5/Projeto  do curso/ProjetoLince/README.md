@@ -1,16 +1,10 @@
-# fgfhfh
 
-A new Flutter project.
+# Tarefas v1
+Desenvolvido junto ao curso de flutter, o projeto serve para abordar e concretizar conceitos da linguagem, widgets, containers, stateless e etc..
+O objetivo é, por em praticas todo conteudo absorvido no curso.
+## O projeto:
+Consiste em monstrar uma barra de tarefas com suas devidas dificuldades, tudo para representar temas abordados e aprendidos no curso de flutter, eu atualizei este app para v2.
 
-## Getting Started
+  <img src= "https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/Flutter%20Stateless%20Stateful%205/Projeto%20%20do%20curso/ProjetoLince/V1.jpeg" width="245" height="360" alt="">
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+== O codigo fonte está na pasta ib ==
