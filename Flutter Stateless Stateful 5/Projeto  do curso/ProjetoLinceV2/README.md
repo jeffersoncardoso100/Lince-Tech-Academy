@@ -1,16 +1,12 @@
-# tarefas_trabalho
+# Tarefas v2
 
-A new Flutter project.
+ Versão mais otimizada e atualizada do app contendo novas funcionalidades graficas de acessibilidade .
 
-## Getting Started
+## O projeto:
+ Tarefas v2 é uma versão melhorada com conteudos buscados fora do curso, aplicando  meus conceitos de front como estilização em css, trazendo isso para dentro do flutter,  respeitando sua arquitetura e seu modo de desenvolvimento.
+ foi acrescentada novas funcionalidades nos widgets como mudanças de cores ao atingir o nivel de interação com a tarefa, podendo chegar ao status "MAESTRIA"
+ Aplicando também o modo de estrutua condicional, para poder obter interação da tela.
 
-This project is a starting point for a Flutter application.
+ <img src= "https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/Flutter%20Stateless%20Stateful%205/Projeto%20%20do%20curso/ProjetoLinceV2/V2.jpeg" width="245" height="360" alt=""> 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ == O codigo fonte está na pasta lib ==
