@@ -1,17 +1,16 @@
-# tela_login_rotas
-
- ![Gerador de senhas](https://github.com/jeffersoncardoso100/Portif-lio-Front/blob/main/portifoo.gif)
+# Quiz de Flutter
 
 
-## Getting Started
+## O projeto:
+Consiste em desenvolver um aplicativo Quiz, contendo perguntas formuladas com respostas de multipla escolha, abordadas em curso e temas sobre Flutter.
+É uma aplicação simples, para firmar conceitos de listas, navegação e rotas que busquei no youtube para estudos de desnvolvimento mobile.
+ 
 
-This project is a starting point for a Flutter application.
+ ![Quiz de Flutter](https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/App_Quiz_Flutter/Quiz.gif)
+  
+### No link abaixo contem video explicativo!
+https://www.youtube.com/watch?v=ORDjs-oHJ5Q&t=7s
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Codigo fonte --- pasta lib ------
