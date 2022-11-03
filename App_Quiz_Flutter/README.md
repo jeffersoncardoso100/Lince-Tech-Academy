@@ -9,7 +9,7 @@ Consiste em desenvolver um aplicativo Quiz, contendo perguntas formuladas com re
  ![Quiz de Flutter](https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/App_Quiz_Flutter/Quiz.gif)
   
 ### No link abaixo contem video explicativo!
-https://www.youtube.com/watch?v=ORDjs-oHJ5Q&t=7s
+
 
 
 
