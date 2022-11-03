@@ -7,10 +7,5 @@ Consiste em desenvolver um aplicativo de formato quiz, contendo perguntas formul
  
 
  ![Quiz de Flutter](https://github.com/jeffersoncardoso100/Lince-Tech-Academy/blob/master/App_Quiz_Flutter/Quiz.gif)
-  
-### No link abaixo contem video explicativo!
-
-
-
 
 Codigo fonte --- pasta lib ------
