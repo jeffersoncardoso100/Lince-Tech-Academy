@@ -1,1 +1,3 @@
-# README EM DESENVOLVIMENTO %
+# Aplicação finalizada.
+
+## Readme em construção %
